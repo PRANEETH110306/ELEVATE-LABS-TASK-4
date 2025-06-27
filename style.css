@@ -1,0 +1,69 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Arial', sans-serif;
+}
+
+body {
+  background: url("Desktop.jpg") no-repeat center center/cover;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+  padding: 20px;
+}
+
+.container {
+  max-width: 600px;
+}
+
+h1 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  text-shadow: 2px 2px 4px black;
+}
+
+#quote {
+  font-size: 1.4rem;
+  margin-bottom: 25px;
+  font-style: italic;
+  text-shadow: 1px 1px 3px black;
+}
+
+#new-quote {
+  padding: 10px 20px;
+  font-size: 1rem;
+  border: 2px solid white;
+  background: transparent;
+  color: white;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+#new-quote:hover {
+  background: white;
+  color: black;
+}
+
+@media (max-width: 768px) {
+  body {
+    background: url("Phone.png") no-repeat center center/cover;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  #quote {
+    font-size: 1rem;
+  }
+
+  #new-quote {
+    padding: 8px 16px;
+    font-size: 0.9rem;
+  }
+}
